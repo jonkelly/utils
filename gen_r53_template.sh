@@ -4,8 +4,7 @@
 
 SUBDOMAIN=$1
 SUBDOMAIN_IP=$2
-
-DOMAIN=d.kelly.zone
+DOMAIN=$3
 
 cat << EOF
 {
