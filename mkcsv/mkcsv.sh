@@ -1,6 +1,6 @@
 while read line; do
     # validate line, only works for English ASCII because I am lazy
-    regex='(https?|ftp|file)://[-A-Za-z0-9\+&@#/%?=~_|!:,.;]*[-A-Za-z0-9\+&@#/%=~_|]'
+    regex='https?://[-A-Za-z0-9\+&@#/%?=~_|!:,.;]*[-A-Za-z0-9\+&@#/%=~_|]'
     if [[ ! $line =~ $regex ]]; then
         echo "$line: Not a valid URL" 1>&2
         continue
